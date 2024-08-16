@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100Vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: grey;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 20px;
+    filter: drop-shadow(30px 10px 7px #151414);
+}
+.image{
+    display: block;
+    height: 60%;
+    filter: drop-shadow(30px 10px 7px #0d0d0e);
+    width: 30%;
+}
+.search-menu{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5%;
+}
+.search-menu input,button{
+    border-radius: 20px;
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid black;
+}
+.search-menu input::placeholder{
+    color: whitesmoke;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+}
+.subscript{
+    font-size: 11px;
+}
+.image-cont{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.result{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.animate{
+    scale: 1.5;
+    transition: 1s all;
+}
+.searchbtn:focus{
+    background-color: white;
+    color: black;
+    transition: .3s all;
+}
+
+@media (max-width:1000px) {
+    .container{
+        width: 80%;
+    }
+    .search-menu{
+        margin-bottom: 10%;
+    }
+    .search-menu button,input{
+        height: 50px;
+    }
+    .image{
+        width: 50%;
+        height: 80%;
+    }
+    .image-cont{
+        transition: .3s al;
+    }
+}
